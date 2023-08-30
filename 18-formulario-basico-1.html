@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios - Básico 1</title>
+</head>
+<body>
+  <h1>Formularios básicos</h1>
+
+  <main>
+
+    <h2>¿Qué son los formularios?</h2>
+
+    <img src="https://media.tenor.com/1yJonrWiv_sAAAAM/hasbulla.gif" alt="habullah driving" border="3">
+
+    <p>Los formularios web son uno de los principales puntos de interacción entre un usuario y un sitio web o aplicación.</p>
+
+    <p>Los formularios permiten a los usuarios la introducción de datos, que generalmente se envían a un servidor web para su procesamiento y almacenamiento (consulta Enviar los datos de un formulario más adelante en el módulo), o se usan en el lado del cliente para provocar de alguna manera una actualización inmediata de la interfaz (por ejemplo, se añade otro elemento a una lista, o se muestra u oculta una función de interfaz de usuario).</p>
+
+    <p>El HTML de un formulario web está compuesto por uno o más controles de formulario (a veces llamados widgets), además de algunos elementos adicionales que ayudan a estructurar el formulario general; a menudo se los conoce como formularios HTML.</p>
+      
+      
+    <p>Los controles pueden ser campos de texto de una o varias líneas, cajas desplegables, botones, casillas de verificación o botones de opción, y se crean principalmente con el elemento &lt;input>, aunque hay algunos otros elementos que también hay que conocer.</p>
+
+    <p>Los controles de formulario también se pueden programar para forzar la introducción de formatos o valores específicos (validación de formulario), y se combinan con etiquetas de texto que describen su propósito para los usuarios con y sin discapacidad visual.
+    </p>
+
+    
+    <h2>Formulario básico 1</h2>
+    <form action="https://tenor.com/es/search/hasbullah-gifs" method="get" target="_blank">
+      <input type="text" placeholder="Nombre" required>
+      <br>
+      <input type="text" placeholder="Apellidos" required>
+      <br>
+      <input type="text" placeholder="Edad (opcional)">
+      <br>
+      <button type="submit">Enviar</button>
+      <br>
+    </form>
+
+    <h3><strong>Elemento &lt;form></strong></h3>
+
+    <p>El elemento HTML form (&lt;form>) representa una sección de un documento que contiene controles interactivos que permiten a un usuario enviar información a un servidor web.
+
+    Es posible usar las pseudo-clasess de CSS :valid e :invalid para darle estilos a un elemento form.</p>
+
+
+    
+    <h4><strong>Atributos &lt;form></strong></h4>
+    <ul>
+      <li><pre>action</pre>: ubicación/url a donde se envían los datos ingresados y validados en el formulario</li>
+      <li><pre>method</pre>: Métodos HTTP: POST, GET, PYT, DELETE (generalmente los más usados son POST y GET)</li>
+      <li><pre>target</pre>: _blank, _parent, _self, _top (_blank abre una nueva pestaña del navegador)</li>
+    </ul>
+
+
+    <h3><strong>Elemento &lt;input></strong></h3>
+
+    <p>El elemento HTML &lt;input> se usa para crear controles interactivos para formularios basados en la web con el fin de recibir datos del usuario.Hay disponible una amplia variedad de tipos de datos de entrada y widgets de control, que dependen del dispositivo y el agente de usuario (user agent (en-US)).El elemento &lt;input> es uno de los más potentes y complejos en todo HTML debido a la gran cantidad de combinaciones de tipos y atributos de entrada.</p>
+
+      <h4><strong>Atributos &lt;input></strong></h4>
+        <ul>
+          <li><pre>type</pre>: Tipo de dato ingresado (en este caso, texto)</li>
+          <li><pre>placeholder</pre>: (marcador de posición) Texto que se visualizará dentro de input para informar al usuario acerca del dato solicitado en ese campo</li>
+          <li><pre>required</pre>: establece como obligatorio este campo</li>
+        </ul>
+
+  </main>
+
+
+
+
+</body>
+</html>
