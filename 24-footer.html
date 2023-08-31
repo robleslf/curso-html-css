@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;footer></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap">
+
+    <style>
+      body {
+        background: linear-gradient(135deg, #e7b7e7, #dbf5e8);
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+        font-family: 'Chilanka', cursive; /* Aplicar la fuente a todo el documento */
+        padding-left: 20px; /* Añadir un relleno al margen izquierdo */
+        padding-right: 20px; /* Añadir un relleno al margen derecho */
+        box-sizing: border-box; /* Asegurar que el relleno se incluya en el ancho total */
+      }
+      /* Aquí añadiremos color a la fuente */
+    h1 {
+      color: #1d415f; /* Cambia este valor al color que desees */
+    }
+
+    p {
+      color: #797575; /* Cambia este valor al color que desees */
+    }
+    </style>
+  </head>
+<body>
+  <h1>&lt;footer> en HTML</h1>
+  <img src="https://media.tenor.com/3KmX_hlp7bEAAAAM/hasbulla-hug.gif" alt="friendship" border="3">
+  <main>
+    <p>El elemento HTML &lt;footer> representa un pie de página para el contenido de la <u>sección ancestral más cercana</u> o el <u>elemento raíz</u>.</p>
+
+    <p>Un elemento &lt;footer> generalmente contiene información sobre el autor del artículo, sección y/o página, datos de derechos de autor o enlaces a documentos relacionados.</p>
+
+    <p>Cuando nos referimos a <strong>sección ancestral más cercana</strong> nos estamos refiriendo a la sección de jerarquía superior a la sección actual (padre)</p>
+
+    <p>En el siguiente ejemplo la sección ancestral más cercana (padre) a footer es &lt;html>:</html></p>
+    <pre>
+      &lt;!DOCTYPE html>
+      &lt;html lang="en">
+        &lt;head>
+          &lt;meta charset="UTF-8">
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+          &lt;title>Document&lt;/title>
+        &lt;/head>
+        
+        &lt;body>
+          Cuerpo del documento
+        &lt;/body>
+
+        &lt;footer>
+          &lt;small>Pie de página&lt;/small>
+        &lt;/footer>
+
+      &lt;/html>
+    </pre>
+
+    <p>En este otro, el footer es el pie del artículo:</p>
+    <pre>
+      &lt;!DOCTYPE html>
+      &lt;html lang="en">
+        &lt;head>
+          &lt;meta charset="UTF-8">
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+          &lt;title>Document&lt;/title>
+        &lt;/head>
+        &lt;body>
+          &lt;main>
+            &lt;article>
+              &lt;header>
+                El encabezado del artículo&lt;
+              &lt;/header>
+              &lt;p>Esto es un artículo&lt;/p>
+              &lt;footer>
+                &lt;small>El footer del artículo&lt;/small>
+              &lt;/footer>
+            &lt;/article>
+          &lt;/main>
+        &lt;/body>
+      &lt;/html>
+    </pre>
+
+
+    <p>Habitualmente al texto que se muestra en &lt;footer> se le aplica la etiqueta &lt;small></p>
+  </main>
+</body>
+<footer><small>© Felipe Robles López | Todos los derechos reservados | 2023</small>
+</footer>
+</html>
