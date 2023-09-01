@@ -1,6 +1,12 @@
-p {
-  color: brown;
-  font-size: 20px;
+h1,
+h2,
+h3 {
+  color: blue;
+}
+
+ul,
+ol {
+  color: olive;
 }
 
 /* estilos para la etiqueta <pre> (esto no es del ejercicio, es solo para que los ejemplos queden bonitos)*/

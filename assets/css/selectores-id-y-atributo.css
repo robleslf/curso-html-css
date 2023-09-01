@@ -1,7 +1,16 @@
-p {
-  color: brown;
-  font-size: 20px;
+/* selector de id */
+#mi-elemento {
+  /* Estilos CSS para el elemento con ID "mi-elemento" */
+  background-color: #ff0000;
+  color: #ffffff;
 }
+
+/* selector de atributo */
+p[data-type="important"] {
+  font-weight: bold;
+  color: red;
+}
+
 
 /* estilos para la etiqueta <pre> (esto no es del ejercicio, es solo para que los ejemplos queden bonitos)*/
 pre {

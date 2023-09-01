@@ -1,6 +1,5 @@
 p {
-  color: brown;
-  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* estilos para la etiqueta <pre> (esto no es del ejercicio, es solo para que los ejemplos queden bonitos)*/

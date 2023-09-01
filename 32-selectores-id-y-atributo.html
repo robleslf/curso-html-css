@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css"" href="assets/css/selectores-id-y-atributo.css">
+  <title>selectores id y atributo</title>
+</head>
+<body>
+  <h1>Selectores de id y de atributo</h1>
+  <img src="https://media.tenor.com/1Iq9yEErA2kAAAAM/party-parrot-parrot-jump.gif" alt="loros bien" border="3">
+  <main>
+    <h2>Selector de ID</h2>
+
+      <p>Selecciona un elemento basándose en el valor de su atributo id. Solo puede haber un elemento con un determinado ID dentro de un documento.
+      </p>
+      <p><strong>Sintaxis:</strong> #idname</p>
+      <p><strong>Ejemplo:
+      </strong> #toc se aplicará a cualquier elemento que tenga el ID "toc".</p>
+
+      <div id="mi-elemento">Este es mi elemento</div>
+      
+
+      <p>---CSS</p>
+      <pre>
+        #mi-elemento {
+          /* Estilos CSS para el elemento con ID "mi-elemento" */
+          background-color: #ff0000;
+          color: #ffffff;
+        }
+      </pre>
+
+      <p>---HTML</p>
+      <pre>
+      &lt;div id="mi-elemento">Este es mi elemento&lt;/div>
+      </pre>
+
+
+      <h2>Selector de atributo</h2>
+
+      <p>Selecciona elementos basándose en el valor de un determinado atributo.</p>
+      <p><strong>Sintaxis:</strong> [attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value]</p>
+      <p><strong>Ejemplo:
+      </strong> [autoplay] seleccionará todos los elementos que tengan el atributo "autoplay" establecido (a cualquier valor).</p>
+
+
+      <p data-type="important">Este es un párrafo importante.</p>
+      <p>Este es un párrafo normal.</p>
+
+      <p>---CSS</p>
+      <pre>
+        p[data-type="important"] {
+          font-weight: bold;
+          color: red;
+        }
+      </pre>
+
+      <p>---HTML</p>
+      <pre>
+        &lt;p data-type="important">Este es un párrafo importante.&lt;/p>
+        &lt;p>Este es un párrafo normal.&lt;/p>      
+      </pre>
+
+        <p>En este ejemplo, todos los elementos &lt;p> que tengan el atributo data-type con el valor "important" se verán afectados por las reglas CSS definidas en el selector [p][data-type="important"], que incluyen un aumento de peso en la fuente a "bold" y un cambio de color a "red". Los párrafos sin este atributo o con un valor diferente no se verán afectados por estas reglas CSS.</p>
+
+  </main>
+</body>
+</html>
