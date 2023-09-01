@@ -47,26 +47,26 @@
 
 <p>Selecciona todos los elementos que tienen el atributo de class especificado.
 </p>
-<p><strong>Sintaxis:</strong>.classname</p>
+<p><strong>Sintaxis:</strong> .classname</p>
 <p><strong>Ejemplo:
 </strong></p>
 
 <h3 class="texto-marron">Lista no ordenada</h3>
 <ul class="listas">
-  <li class="fondo-negro" class="texto-marron" >Item 1</li>
+  <li class="fondo-negro"><span class="texto-marron">Item 1</span></li>
   <li>Item 2</li>
   <li>Item 3</li>
 </ul>
 
 <h3>Lista ordenada</h3>
 
-<ul class="listas" >
+<ol class="listas" >
   <li>Elemento ABC</li>
   <li>Elemento DEF</li>
   <li>Elemento GHI</li>
-</ul>
+</ol>
 
-
+--- CSS
 <pre>
 .listas {
   font-style: normal;
@@ -74,6 +74,32 @@
 }
 </pre>
 
+--- HTML
+<pre>
+  &lt;h3 class="texto-marron">Lista no ordenada&lt;/h3>
+  &lt;ul class="listas">
+    &lt;li class="fondo-negro" class="texto-marron" >Item 1&lt;/li>
+    &lt;li>Item 2&lt;/li>
+    &lt;li>Item 3&lt;/li>
+  &lt;/ul>
+  
+  &lt;h3>Lista ordenada&lt;/h3>
+  
+  &lt;ol class="listas" >
+    &lt;li>Elemento ABC&lt;/li>
+    &lt;li>Elemento DEF&lt;/li>
+    &lt;li>Elemento GHI&lt;/li>
+  &lt;/ol>
+</pre>
+
+
+<h2>Selector de ID</h2>
+
+<p>Selecciona todos los elementos que tienen el atributo de class especificado.
+</p>
+<p><strong>Sintaxis:</strong> .classname</p>
+<p><strong>Ejemplo:
+</strong></p>
 
 
 </body>

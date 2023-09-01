@@ -2,3 +2,14 @@ p {
   color: brown;
   font-size: 20px;
 }
+
+/* estilos para la etiqueta <pre> (esto no es del ejercicio, es solo para que los ejemplos queden bonitos)*/
+pre {
+  background-color: rgb(233, 209, 209);
+  padding: 10px;
+  border: 2px solid rgb(87, 46, 41); /* Cambiamos el valor de border */
+  overflow: auto;
+  font-family: monospace;
+  width: fit-content;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3); 
+}
