@@ -10,6 +10,15 @@ p[data-type="important"] {
   font-weight: bold;
   color: red;
 }
+/* que comience por algo:
+a[href^=".com"
+*/
+/* que termine por algo:
+a[href$="goog"
+*/
+/* que contenga algo:
+a[href*="goog"
+*/
 
 
 /* estilos para la etiqueta <pre> (esto no es del ejercicio, es solo para que los ejemplos queden bonitos)*/
