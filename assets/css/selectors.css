@@ -24,11 +24,15 @@ pre {
   width: fit-content;
   box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3); 
 }
+/* Esto solo es para que el fondo no me rompa los ojos con el blanco */
+body {
+  background-color: cornflowerblue;
+}
 
 /* selectores de clase */
 .listas {
   font-style: normal;
-  color: cornflowerblue;
+  color: darkmagenta;
 }
 
 .texto-marron {
@@ -37,4 +41,17 @@ pre {
 
 .fondo-negro {
   background-color: black;
+}
+
+/* selector de id */
+#mi-elemento {
+  /* Estilos CSS para el elemento con ID "mi-elemento" */
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+/* selector de atributo */
+p[data-type="important"] {
+  font-weight: bold;
+  color: red;
 }
