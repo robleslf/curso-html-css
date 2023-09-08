@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/borrador.css">
+  <title>Document</title>
+</head>
+<body class="background">
+  <h1>Buenas tardes</h1>
+  <h2>Ejercicio con selectores de atributos</h2>
+  <img src="https://media.tenor.com/Q7EFdYYjyjYAAAAC/anime-tanjiro.gif" alt="anime-tanjiro">
+  <p>Página web con un div, con cinco párrafos, y cada uo tenga un atributo que sea <strong>mi_bool</strong> con valores <strong>True</strong> o <strong>False</strong> alternándose.</p>
+
+  <div>
+    <p my_bool="True">True</p>
+    <p my_bool="False">False</p>
+    <p my_bool="True">True</p>
+    <p my_bool="False">False</p>
+    <p my_bool="True">True</p>
+  </div>
+
+  ---HTML
+  <pre>
+    &lt;div>
+      &lt;p my_bool="True">True&lt;/p>
+      &lt;p my_bool="False">False&lt;/p>
+      &lt;p my_bool="True">True&lt;/p>
+      &lt;p my_bool="False">False&lt;/p>
+      &lt;p my_bool="True">True&lt;/p>
+    </div>
+  </pre>
+
+  ---CSS
+  <pre>
+    img {
+      width: 300px;
+      height: auto;
+    }
+    
+    [my_bool="True"] {
+      color: green;
+    }
+    
+    [my_bool="False"] {
+      color: crimson;
+    }
+  </pre>
+</body>
+</html>

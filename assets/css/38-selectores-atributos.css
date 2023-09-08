@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Orbitron";
+  src: url(../fonts/Orbitron/Orbitron-VariableFont_wght.ttf);
+}
+
+body {
+  background: linear-gradient(135deg, #ffcc33, #ff9900); /* Degradado de colores cálidos */
+  margin: 50px;
+  padding: 0;
+  font-family: Orbitron, sans-serif;
+  color: #fff;
+  background-size: cover; /* Para que el fondo cubra toda la página */
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif; /* Fuente Orbitron */
+  font-size: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10vh;
+  letter-spacing: 4px;
+  color: bisque;
+  text-shadow: 0 0 10px rgba(255, 252, 86, 0.8); /* Efecto de neón blanco amarillo */
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif; /* Fuente Orbitron */
+  font-size: 36px;
+  letter-spacing: 3px;
+  color: rgb(94, 223, 255); /* Color de brillo azul neon */
+  text-shadow: 0 0 10px rgba(138, 252, 252, 0.8); /* Efecto de neón azul */
+}
+
+p {
+  font-family: Orbitron, sans-serif;
+  color: darkblue;
+  text-shadow: rgba(94, 223, 255, 0.808);
+}
+
+img {
+  width: 300px;
+  height: auto;
+}
+
+[my_bool="True"] {
+  color: green;
+}
+
+[my_bool="False"] {
+  color: crimson;
+}
+
+pre {
+  background: linear-gradient(135deg, #ffcc33, #ff9900); /* Degradado beige */
+  border-top-left-radius: 10px; /* Redondear la esquina superior izquierda */
+  border-top-right-radius: 10px; /* Redondear la esquina superior derecha */
+  border-bottom-left-radius: 10px; /* Redondear la esquina inferior izquierda */
+  border-bottom-right-radius: 10px; /* Redondear la esquina inferior derecha */
+  border: 1px solid #ccc; /* Agregar un borde (puedes personalizar el color y el grosor) */
+  padding: 10px; /* Agregar un espacio de relleno si es necesario */
+  padding: 10px;
+  overflow: auto;
+  border-radius: 10%;
+  color: deepskyblue;
+}
