@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="assets/css/images.css">
+  <title>Imágenes en CSS</title>
+</head>
+<body>
+  <h1>Imágenes en CSS</h1>
+
+  <p>¿Cómo la vestimenta puede cambiar tanto...</p>
+    <img class="hasbullah-img" src="assets/img/hasbulla (1).gif" alt="hasbulla_increible">
+
+  <p>...a un hombre?</p>
+  <img class="hasbullah-img" src="assets/img/hasbulla.gif" alt="hasbulla_increible">
+
+  <p>Hoy, Hasbullah, nos cuenta todo sobre moda.</p>
+
+  <img class="gato-img" src="assets/img/sad-cat.gif" alt="gato">
+
+  <br>
+
+  <img class="kung-fu-total" src="assets/img/hasbulla-kick.gif" alt="hasbullah kick">
+
+  <br>
+  <br>
+  <img class="pool" src="assets/img/hasbulla-mini-khabib.gif" alt="pool">
+<br><br>
+---CSS
+  <pre>
+    body {
+      background-color: slateblue;
+      color: bisque;
+    }
+    
+    img {
+      width: 250px;
+      height: 250px;
+    }
+    
+    .hasbullah-img {
+      width: 250px;
+      height: auto; 
+      /* con el valor auto se aplica la medida del width y el height se ajusta manteniendo la proporción de la imagen original */
+      border-width: 25px;
+      border-style: groove;
+      border-color: gold;
+    }
+    
+    .gato-img {
+      width: auto;
+      height: 150px;
+      border-width: 10px;
+      border-style: double;
+      border-color: silver;
+    }
+    
+    .kung-fu-total {
+      border-width: 25px;
+      border-color: deeppink;
+      border-style: dotted;
+    }
+    
+    .pool {
+      border-width: 15px;
+      border-color: chocolate;
+      border-style: dotted dashed ridge;
+      /* los border-style: se aplicarán empezando por top y en el sentido de las agujas del reloj; */
+    }
+  </pre>
+</body>
+</html>

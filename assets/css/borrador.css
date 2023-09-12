@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Orbitron";
+  src: url(../fonts/Orbitron/Orbitron-VariableFont_wght.ttf);
+}
+
+body {
+  background-image: url('../img/night-sky-colorful-beautiful-clouds-mountain-valley-digital-art-4k-wallpaper-uhdpaper.com-608@1@k.jpg'); /* Reemplaza 'ruta/de/la/imagen.jpg' con la ruta real de tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  margin: 50px;
+  padding: 0;
+  font-family: Orbitron, sans-serif;
+  color: #fff;
+  background-size: cover; /* Para que el fondo cubra toda la página */
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif; /* Fuente Orbitron */
+  font-size: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10vh;
+  letter-spacing: 4px;
+  color: bisque;
+  text-shadow: 0 0 10px rgba(255, 252, 86, 0.8); /* Efecto de neón blanco amarillo */
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif; /* Fuente Orbitron */
+  font-size: 36px;
+  letter-spacing: 3px;
+  color: rgb(94, 223, 255); /* Color de brillo azul neon */
+  text-shadow: 0 0 10px rgba(138, 252, 252, 0.8); /* Efecto de neón azul */
+}
+
+p {
+  font-family: Orbitron, sans-serif;
+  color: ghostwhite;
+  text-shadow:
+  -1px -1px 0 black, /* Sombra superior izquierda */
+  1px -1px 0 black, /* Sombra superior derecha */
+  -1px 1px 0 black, /* Sombra inferior izquierda */
+  1px 1px 0 black; /* Sombra inferior derecha */
+}
+
+img {
+  width: 300px;
+  height: auto;
+}
+
+/* Aplica el efecto de sombra de neon a las imágenes con la clase 'neon-border' */
+img.neon-border {
+  box-shadow: 0 0 10px 5px rgba(173, 216, 230, 0.8); /* Cambia el valor de 'rgba' para ajustar el color */
+}
+
+
+[my_bool="True"] {
+  color: green;
+}
+
+[my_bool="False"] {
+  color: crimson;
+}
+
+pre {
+  background: linear-gradient(135deg, #c04ef5, #8effffd7); /* Degradado beige */
+  border: 2px solid #ffe9a6b9; /* Borde beige */
+  padding: 10px;
+  overflow: auto;
+  color: rgb(12, 44, 54);
+}
+
+::selection {
+  background-color: #ffcc00; /* Cambia el color de fondo de la selección */
+  color: #6210be; /* Cambia el color del texto seleccionado */
+}
+

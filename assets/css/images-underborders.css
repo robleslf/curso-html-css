@@ -1,0 +1,77 @@
+body {
+  background: linear-gradient(135deg, #00bfff, #ff69b4);
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px; /* Añadir un relleno al margen izquierdo */
+  padding-right: 20px; /* Añadir un relleno al margen derecho */
+  font-family: 'Orbitron', sans-serif;
+  color: #fff; /* Cambiar el color del texto a blanco */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agregar sombra al texto */
+  animation: neonGlow 1s ease-in-out infinite alternate; /* Agregar un efecto de brillo */
+}
+
+@keyframes neonGlow {
+  0% {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    text-shadow: 4px 4px 8px #00bfff, -4px -4px 8px #ff69b4, 0 0 20px #00bfff, 0 0 30px #ff69b4;
+  }
+}
+
+pre {
+  background: #333;
+  color: #FFD700;
+  padding: 20px;
+  border: 2px solid #FFD700;
+  border-radius: 10px;
+  font-family: 'Orbitron', sans-serif;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  overflow-x: auto;
+  white-space: pre-wrap;
+  animation: pulseBackground 0.1s ease-in-out infinite alternate; /* Agregamos la animación al fondo */
+}
+
+@keyframes pulseBackground {
+  0% {
+    background: #333;
+  }
+  100% {
+    background: #444; /* Cambiamos el color de fondo en el punto más extremo de la animación */
+  }
+}
+
+
+
+img {
+  width: 400px;
+  height: auto;
+}
+
+.border-round-20 {
+  border-radius: 20px;
+}
+
+.border-round-50 {
+  border-radius: 50px;
+}
+
+.border-round-100 {
+  border-radius: 100px;
+}
+.border-round-150 {
+  border-radius: 100px;
+}
+
+.border-round-200 {
+  border-radius: 200px;
+}
+
+.border-round-25percent {
+  border-radius: 25%;
+}
+
+.pentagono {
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}

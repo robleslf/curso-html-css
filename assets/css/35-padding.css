@@ -1,0 +1,41 @@
+body {
+  background: linear-gradient(to bottom, #ffc04c, #ecc4a1);
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+div {
+  background-color: crimson;
+}
+
+img {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: darkcyan;
+  width: 400px;
+  height: 300px;
+  border-color: black;
+  border-style: solid;
+}
+
+
+.butterfly {
+  width: 100px;
+  height: 60px;
+  background: url("../img/marcianito.gif") center/cover no-repeat;
+  position: absolute;
+  animation: moveButterfly 5s linear infinite;
+}
+
+@keyframes moveButterfly {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100vw, 100vh);
+  }
+}

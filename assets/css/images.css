@@ -1,0 +1,51 @@
+/* Keyword values */
+/* border-style: none;
+border-style: hidden;
+border-style: dotted;
+border-style: dashed;
+border-style: solid;
+border-style: double;
+border-style: groove;
+border-style: ridge;
+border-style: inset;
+border-style: outset; */
+
+body {
+  background-color: slateblue;
+  color: bisque;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+}
+
+.hasbullah-img {
+  width: 250px;
+  height: auto; 
+  /* con el valor auto se aplica la medida del width y el height se ajusta manteniendo la proporción de la imagen original */
+  border-width: 25px;
+  border-style: groove;
+  border-color: gold;
+}
+
+.gato-img {
+  width: auto;
+  height: 150px;
+  border-width: 10px;
+  border-style: double;
+  border-color: silver;
+}
+
+.kung-fu-total {
+  border-width: 25px;
+  border-color: deeppink;
+  border-style: dotted;
+}
+
+.pool {
+  border-width: 15px;
+  border-color: chocolate;
+  border-style: dotted dashed ridge;
+  /* los border-style: se aplicarán empezando por top y en el sentido de las agujas del reloj; */
+}

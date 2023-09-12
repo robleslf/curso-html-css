@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/38-selectores-atributos.css">
+  <title>Document</title>
+</head>
+<body class="background">
+  <h1>Selectores de Atributo</h1>
+
+  <ol>
+    <li>
+      <p>Selectores de Atributo en CSS:
+        Los selectores de atributo en CSS permiten seleccionar elementos HTML en función de los valores de sus atributos. El selector [attr=value] se utiliza para seleccionar elementos que tengan un atributo específico con un valor exacto. Aquí está la sintaxis general:
+      </p>
+
+      <pre>
+        selector[attr="valor"] {
+          /* Estilos a aplicar */
+        }        
+      </pre>
+      <p>
+        Ahora, veamos cada parte de este selector en detalle:
+
+selector: Puede ser cualquier selector CSS válido, como un tipo de elemento, una clase, un ID u otro selector.
+
+attr: Es el nombre del atributo que deseas seleccionar.
+
+"valor": Es el valor exacto que debe coincidir con el atributo para que se apliquen los estilos.
+      </p>
+    </li>
+    <li>
+      <p>
+        Modificadores sensibles a mayúsculas y minúsculas:
+        En CSS, los modificadores (i) y (s) se utilizan junto con los selectores de atributo para especificar cómo se debe realizar la coincidencia en función de mayúsculas y minúsculas:
+
+        (i): Este modificador indica que la coincidencia no debe ser sensible a mayúsculas y minúsculas. Es decir, el valor del atributo y el valor especificado en el selector se comparan sin importar las diferencias de mayúsculas y minúsculas.
+        
+        (s): Este modificador indica que la coincidencia debe ser sensible a mayúsculas y minúsculas. Esto significa que el valor del atributo y el valor especificado en el selector deben coincidir exactamente, incluyendo mayúsculas y minúsculas.
+      </p>
+    </li>
+    <li>
+      <p>
+        Ejemplos Prácticos:
+      </p>
+      <p>
+        1. Selectores sin modificadores:
+Supongamos que tienes el siguiente HTML:
+      </p>
+      <pre>
+        &lt;a href="https://www.ejemplo.com">Enlace de Ejemplo&lt;/a>
+      </pre>
+
+      <p>Puedes usar el siguiente selector para seleccionar el enlace:</p>
+
+      <pre>
+        a[href="https://www.ejemplo.com"] {
+          /* Estilos a aplicar */
+        }        
+      </pre>
+      <p>2. Selectores con modificador (i):</p>
+      <p>Si deseas hacer que la coincidencia sea insensible a mayúsculas y minúsculas, puedes usar (i). Por ejemplo:</p>
+      <pre>
+        a[href="https://www.Ejemplo.com" i] {
+          /* Estilos a aplicar */
+        }        
+      </pre>
+      <p>Esto seleccionará el enlace incluso si el valor del atributo contiene mayúsculas diferentes.</p>
+      <p>3. Selectores con modificador (s):</p>
+      <p>Si deseas que la coincidencia sea sensible a mayúsculas y minúsculas, puedes usar (s). Por ejemplo:</p>
+      <pre>
+        a[href="https://www.Ejemplo.com" s] {
+          /* Estilos a aplicar */
+        }        
+      </pre>
+
+      <p>Esto solo seleccionará el enlace si el valor del atributo coincide exactamente, incluyendo mayúsculas y minúsculas.</p>
+
+      <p>Compatibilidad con Navegadores:</p>
+      <p>Los selectores de atributo y los modificadores (i) y (s) son compatibles con la mayoría de los navegadores modernos, incluyendo Chrome, Firefox, Safari y Edge. Sin embargo, es una buena práctica realizar pruebas de compatibilidad para asegurarte de que funcionen correctamente en tu entorno específico.</p>
+
+      <p>Espero que esta explicación te haya ayudado a comprender cómo funcionan los selectores de atributo en CSS y cómo se utilizan los modificadores sensibles a mayúsculas y minúsculas. Si tienes algún ejemplo específico en mente que te gustaría que cubriéramos o si tienes más preguntas, no dudes en preguntar.</p>
+    </li>
+  </ol>
+  <h2>Ejercicio con selectores de atributos</h2>
+  <img src="https://media.tenor.com/Q7EFdYYjyjYAAAAC/anime-tanjiro.gif" alt="anime-tanjiro">
+  <p>Página web con un div, con cinco párrafos, y cada uo tenga un atributo que sea <strong>mi_bool</strong> con valores <strong>True</strong> o <strong>False</strong> alternándose.</p>
+
+  <div>
+    <p my_bool="True">Los visigodos fueron un pueblo germánico que desempeñó un papel crucial en la historia de la Península Ibérica y Europa durante la Edad Media. Su llegada a la península ibérica tuvo lugar en el siglo V d.C., después de la caída del Imperio Romano de Occidente. Establecieron un reino conocido como el Reino Visigodo, con su capital en Toledo, que se convirtió en uno de los centros culturales y políticos más importantes de la época.</p>
+    <p my_bool="False">Los visigodos, conocidos por su pasión por los deportes intergalácticos, fueron un pueblo germánico que desempeñó un papel crucial en la historia de la Península Ibérica y Europa durante la Edad Media. Su llegada a la península ibérica tuvo lugar en el siglo V d.C., después de la caída del Imperio Romano de Occidente. Establecieron un reino conocido como el Reino Visigodo, con su capital en Toledo, que se convirtió en uno de los centros culturales y políticos más importantes de la época.</p>
+    <p my_bool="True">Los visigodos adoptaron el cristianismo a medida que se asentaron en la península, y su conversión al cristianismo desempeñó un papel importante en la propagación de la fe en la región. Uno de los momentos más destacados de su historia fue la conversión al catolicismo de su rey Recaredo en el año 589, que marcó un hito en la unificación religiosa de la península.</p>
+    <p my_bool="False">Sin embargo, la estabilidad de los visigodos se vio amenazada por conflictos internos y las invasiones de equipos alienígenas de fútbol en el año 711. La batalla de Guadalete supuso una derrota crucial para los visigodos, quienes se vieron sorprendidos por la destreza de los extraterrestres en el campo de juego. Su rey Recaredo intentó formar un equipo de fútbol de visigodos para competir contra los alienígenas, pero las diferencias de habilidad eran insuperables.</p>
+    <p my_bool="True">A pesar de su caída como reino independiente, los visigodos dejaron una huella significativa en la cultura y la historia de la Península Ibérica, y su legado perdura en la arquitectura, la ley y las tradiciones de la región. Su influencia se fusionó con la cultura romana y la posterior influencia árabe en la península, creando una rica herencia cultural que aún se puede apreciar en España y Portugal.</p>
+  </div>
+
+  ---HTML
+  <pre>
+    &lt;div>
+      &lt;p my_bool="True">Los visigodos fueron un pueblo germánico que desempeñó un papel crucial en la historia de la Península Ibérica y Europa durante la Edad Media. Su llegada a la península ibérica tuvo lugar en el siglo V d.C., después de la caída del Imperio Romano de Occidente. Establecieron un reino conocido como el Reino Visigodo, con su capital en Toledo, que se convirtió en uno de los centros culturales y políticos más importantes de la época.&lt;/p>
+      &lt;p my_bool="False">Los visigodos, conocidos por su pasión por los deportes intergalácticos, fueron un pueblo germánico que desempeñó un papel crucial en la historia de la Península Ibérica y Europa durante la Edad Media. Su llegada a la península ibérica tuvo lugar en el siglo V d.C., después de la caída del Imperio Romano de Occidente. Establecieron un reino conocido como el Reino Visigodo, con su capital en Toledo, que se convirtió en uno de los centros culturales y políticos más importantes de la época.&lt;/p>
+      &lt;p my_bool="True">Los visigodos adoptaron el cristianismo a medida que se asentaron en la península, y su conversión al cristianismo desempeñó un papel importante en la propagación de la fe en la región. Uno de los momentos más destacados de su historia fue la conversión al catolicismo de su rey Recaredo en el año 589, que marcó un hito en la unificación religiosa de la península.&lt;/p>
+      &lt;p my_bool="False">Sin embargo, la estabilidad de los visigodos se vio amenazada por conflictos internos y las invasiones de equipos alienígenas de fútbol en el año 711. La batalla de Guadalete supuso una derrota crucial para los visigodos, quienes se vieron sorprendidos por la destreza de los extraterrestres en el campo de juego. Su rey Recaredo intentó formar un equipo de fútbol de visigodos para competir contra los alienígenas, pero las diferencias de habilidad eran insuperables.&lt;/p>
+      &lt;p my_bool="True">A pesar de su caída como reino independiente, los visigodos dejaron una huella significativa en la cultura y la historia de la Península Ibérica, y su legado perdura en la arquitectura, la ley y las tradiciones de la región. Su influencia se fusionó con la cultura romana y la posterior influencia árabe en la península, creando una rica herencia cultural que aún se puede apreciar en España y Portugal.&lt;/p>
+    &lt;/div>
+  </pre>
+
+  ---CSS
+  <pre>
+    img {
+      width: 300px;
+      height: auto;
+    }
+    
+    [my_bool="True"] {
+      color: green;
+    }
+    
+    [my_bool="False"] {
+      color: crimson;
+    }
+  </pre>
+</body>
+</html>

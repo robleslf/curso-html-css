@@ -1,0 +1,79 @@
+body {
+  background-color: black;
+  color: antiquewhite;
+}
+
+/* Estilos por clase*/
+
+.panel {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.bgcolor-blue {
+  background-color: #060971;
+}
+
+.bgcolor-yellow {
+  background-color: #FFC300;
+}
+
+.bgcolor-white {
+  background-color: white;
+}
+
+.border-red {
+  border: 20px solid;
+  border-color: red;
+}
+
+.border-white {
+  border: 20px solid;
+  border-color: white;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black;
+}
+
+
+/* estilos por ID*/
+
+#psyco-div {
+  background-color: burlywood;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-weight: bold;
+}
+
+#psyco-green {
+  background-color: #a3f307;
+}
+
+#psyco-aqua {
+  background-color: #05f9e2;
+}
+
+#psyco-green-lemon {
+  background-color: #e2f705;
+}
+
+#psyco-fuchsia {
+  background-color: fuchsia;
+}
+
+#psyco-orange {
+  background-color: orange;
+}
+
+.width-80percent {
+  width: 80%;
+}

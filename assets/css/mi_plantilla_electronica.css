@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Orbitron";
+  src: url("../fonts/Orbitron/Orbitron-VariableFont_wght.ttf") format("truetype");
+}
+
+
+body {
+  background: linear-gradient(135deg, #f8e90f, #e64bde);
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px; /* Añadir un relleno al margen izquierdo */
+  padding-right: 20px; /* Añadir un relleno al margen derecho */
+}
+
+@keyframes neonGlow {
+  0% {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    text-shadow: 4px 4px 8px #00bfff, -4px -4px 8px #ff69b4, 0 0 20px #00bfff, 0 0 30px #ff69b4;
+  }
+}
+
+@keyframes pulseBackground {
+  0% {
+    background: #333;
+  }
+  100% {
+    background: #444; /* Cambiamos el color de fondo en el punto más extremo de la animación */
+  }
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  color: cornsilk;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: neonGlow 1s ease-in-out infinite alternate;
+  text-align: center; /* Centrar el texto horizontalmente */
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: cornsilk;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: unset;
+  margin-top: 20px; /* Agregamos un espacio superior */
+}
+
+h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: unset;
+  margin-top: 20px; /* Agregamos un espacio superior */
+}
+
+h4 {
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: unset;
+  margin-top: 20px; /* Agregamos un espacio superior */
+}
+
+h5 {
+  font-family: 'Orbitron', sans-serif;
+  color: darkslateblue;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: unset;
+  margin-top: 20px; /* Agregamos un espacio superior */
+}
+
+h6 {
+  font-family: 'Orbitron', sans-serif;
+  color: indigo;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: unset;
+  margin-top: 20px; /* Agregamos un espacio superior */
+  margin-left: 20px; /* Agregamos un margen izquierdo */
+}
+
+
+p {
+  font-family: 'Orbitron', sans-serif;
+  color: aliceblue;
+}
+
+ol,
+ul{
+  font-family: "Orbitron", sans-serif;
+  color: aliceblue;
+  font-size: 15px;
+}
+
+pre {
+  background: #ffffff59;
+  color: rgb(27, 63, 131);
+  padding: 20px;
+  border: 2px solid #ff69b4;
+  border-radius: 10px;
+  font-family: 'Orbitron', sans-serif;
+  box-shadow: 0 0 10px rgba(248, 245, 229, 0.5);
+  overflow-x: auto;
+  white-space: pre-wrap;
+  line-height: 1.2; /* Puedes ajustar este valor según tus preferencias */
+}
+
+strong {
+  color: blanchedalmond;
+  font-weight: bold;
+}
+
+.categorias {
+  background-color: #ff9dd8; /* Fondo rosa */
+  border: 2px solid #c4c4c4; /* Borde gris */
+  color: #3f63a0; /* Color de letra azul */
+  padding: 10px; /* Espacio interior */
+  border-radius: 10px; /* Borde redondeado */
+}
+
+.categorias p {
+  color: #f7238d;
+  font-size: 12px;
+  margin-left: 30px;
+}
+
+.italica {
+  font-style: italic;
+}

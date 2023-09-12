@@ -1,0 +1,28 @@
+div {
+  font-size: 20px;
+ 
+}
+
+.em2 {
+  font-size: 2em;
+}
+
+.rem2 {
+  font-size: 2rem;
+}
+
+ul {
+  font-size: 10px;
+}
+
+.green-text {
+  color: green;
+}
+
+.red-text {
+  color: crimson;
+} 
+
+.courier {
+  font-family: 'Courier New', Courier, monospace;
+}

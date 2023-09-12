@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="assets/css/images-underborders.css">
+  <title>Imagen con borde redondeado</title>
+</head>
+<body>
+  <h1>Imagen con bordes redondeados</h1>
+    <h2>Borde de 20px</h2>
+      <img class="border-round-20" src="assets/img/clipping_E0q5Fu_d6a2.webp" alt="the special one">
+      <h2>Borde de 50px</h2>
+      <img class="border-round-50" src="assets/img/clipping_E0q5Fu_d6a2.webp" alt="the special one">
+      <h2>Borde de 100px</h2>      
+      <img class="border-round-100" src="assets/img/clipping_E0q5Fu_d6a2.webp" alt="the special one">
+      
+      <h2>Borde de 150px</h2>
+      <img class="border-round-150" src="assets/img/clipping_E0q5Fu_d6a2.webp" alt="the special one">
+      <h2>Borde de 200px</h2>
+      <p></p>
+      <h3>Imagen rectangular:</h3>
+      <img class="border-round-200" src="assets/img/clipping_E0q5Fu_d6a2.webp" alt="the special one">
+      <p>La geometría de la imagen imposibilita visualizar una imagen redonda</p>
+      <p></p>
+      <h3>Imagen cuadrada:</h3>
+      <img class="border-round-200" src="assets/img/clipping_E0q5Fu_d6a2 (1).webp" alt="the special one">
+
+      <h2>Borde redondeado al 25%</h2>
+      <img class="border-round-25percent" src="assets/img/clipping_E0q5Fu_d6a2.webp" alt="the special one">
+
+      <h2>Pentágono (<a href="https://bennettfeely.com/clippy/" target="_blank">https://bennettfeely.com/clippy/</a>)</h2>
+      <img class="pentagono" src="assets/img/clipping_E0q5Fu_d6a2 (1).webp" alt="the special one">
+
+      <p>---HTML</p>
+      <pre>
+        &lt;h1>Imagen con bordes redondeados&lt;/h1>
+        &lt;h2>Borde de 20px&lt;/h2>
+          &lt;img class="border-round-20" src="assets/img/clipping_E0q5Fu_d6a2.webp" alt="the special one">
+          &lt;h2>Borde de 50px&lt;/h2>
+          &lt;img class="border-round-50" src="assets/img/clipping_E0q5Fu_d6a2.webp" alt="the special one">
+          &lt;h2>Borde de 100px&lt;/h2>      
+          &lt;img class="border-round-100" src="assets/img/clipping_E0q5Fu_d6a2.webp" alt="the special one">
+          
+          &lt;h2>Borde de 150px&lt;/h2>
+          &lt;img class="border-round-150" src="assets/img/clipping_E0q5Fu_d6a2.webp" alt="the special one">
+          &lt;h2>Borde de 200px&lt;/h2>
+          &lt;p>&lt;/p>
+          &lt;h3>Imagen rectangular:&lt;/h3>
+          &lt;img class="border-round-200" src="assets/img/clipping_E0q5Fu_d6a2.webp" alt="the special one">
+          &lt;p>La geometría de la imagen imposibilita visualizar una imagen redonda&lt;/p>
+          &lt;p>&lt;/p>
+          &lt;h3>Imagen cuadrada:&lt;/h3>
+          &lt;img class="border-round-200" src="assets/img/clipping_E0q5Fu_d6a2 (1).webp" alt="the special one">
+    
+          &lt;h2>Borde redondeado al 25%&lt;/h2>
+          &lt;img class="border-round-25percent" src="assets/img/clipping_E0q5Fu_d6a2.webp" alt="the special one">
+    
+          &lt;h2>Pentágono (&lt;a href="https://bennettfeely.com/clippy/" target="_blank">https://bennettfeely.com/clippy/&lt;/a>)&lt;/h2>
+          &lt;img class="pentagono" src="assets/img/clipping_E0q5Fu_d6a2 (1).webp" alt="the special one">
+      </pre>
+<p>---CSS</p>
+      <pre>
+        img {
+          width: 400px;
+          height: auto;
+        }
+        
+        .border-round-20 {
+          border-radius: 20px;
+        }
+        
+        .border-round-50 {
+          border-radius: 50px;
+        }
+        
+        .border-round-100 {
+          border-radius: 100px;
+        }
+        .border-round-150 {
+          border-radius: 100px;
+        }
+        
+        .border-round-200 {
+          border-radius: 200px;
+        }
+        
+        .border-round-25percent {
+          border-radius: 25%;
+        }
+        
+        .pentagono {
+          clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        }
+      </pre>
+</body>
+</html>
