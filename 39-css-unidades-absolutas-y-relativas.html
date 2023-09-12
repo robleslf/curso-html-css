@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/39-unidades-absolutas-y-relativas.css">
+  <title>Unidades absolutas y relativas en CSS</title>
+</head>
+<body class="background">
+  <h1>Unidades absolutas y relativas en CSS</h1>
+
+  <p class="red-text">Párrafo en &lt;html> con fuente y tamaño predeterminado del navegador.</p>
+
+  <p class="red-text courier">Párrafo en &lt;html> con fuente Courier New y tamaño predeterminado del navegador.</p>
+
+  <p class="em2 red-text">Párrafo en &lt;html> con fuente y tamaño 2em.</p>
+
+  <hr>
+
+  <div>
+    <p>Párrafo en &lt;div> con Courier New 20px</p>
+    <p class="em2">Párrafo en &lt;div> con Courier New 20 2em</p>
+
+    <ul>
+      <li><strong>Uno:</strong> con tamaño y letra del &lt;ul> 10px.</li>
+      <li class="em2"><strong>Dos:</strong> con tamaño 2em, es decir, 2 veces el tamaño del contenedor, en este caso &lt;ul> → 10px * 2 = 20px.</li>
+      <li class="rem2 red-text"><strong>Tres:</strong> con tamaño 2rem, es decir, 2 veces el tamaño del elemento raíz, en este caso &lt;html>
+      <p>Observa que el tamaño sí es el doble del tamaño del elemento raíz</p>
+      </li>
+    </ul>
+
+    <p>Todos los elementos mostrados con este estilo son relativos a la etiqueta &lt;html> y consecuentemente con el tamaño de letra predeterminado de ese contenedor raíz (root)</p>
+  </div>
+
+  <hr>
+
+</body>
+</html>
