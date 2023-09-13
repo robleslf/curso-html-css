@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #fff;
+}
+
+.flag {
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+  border: 2px solid #000;
+  position: relative;
+}
+
+.red-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #e00;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Agrega el sol naciente (representado como un círculo rojo más pequeño en el centro) */
+  box-shadow: 0 0 0 10px #fff, 0 0 0 20px #e00;
+}

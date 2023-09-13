@@ -1,0 +1,27 @@
+.paleta-color {
+  --rojo: rgb(255, 0 , 0);
+  --verde: rgb(0, 255, 0);
+  --azul: rgb(0, 0 ,255);
+  --chocolate: rgb(121, 60, 17);
+
+  --grande: 40px;
+  --mediano: 20px;
+  --pequeno: 10px;
+}
+
+#rojo-grande{
+
+}
+
+.verde-mediano{
+
+}
+
+[att="azul-pequeno"]{
+  color: var(--azul, blue);
+  font-size: var(--pequeno), 10px;
+}
+
+li {
+  color: var(--chocolate, chocolate);
+}
