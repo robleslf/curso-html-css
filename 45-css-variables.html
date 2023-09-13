@@ -9,11 +9,154 @@
 <body>
   <h1>Variables en CSS</h1>
   
-  <ul>
-  <li id="rojo-grande">rojo-grande</li>
-  <li class="verde-mediano">verde-mediano</li>
-  <li att="azul-pequeno">azul-pequeno</li>
-  <li>chocolate</li>
-</ul>
+  <div class="tool-box">
+    <ul>
+    <li id="rojo-grande">rojo-grande</li>
+    <li class="verde-mediano">verde-mediano</li>
+    <li att="azul-pequeno">azul-pequeno</li>
+    <li>chocolate</li>
+    </ul>
+  </div>
+
+  <h2>Variables globales</h2>
+  <pre class="pre-colores">
+    ---HTML
+    &lt;div class="tool-box">
+      &lt;ul>
+      &lt;li id="rojo-grande">rojo-grande&lt;/li>
+      &lt;li class="verde-mediano">verde-mediano&lt;/li>
+      &lt;li att="azul-pequeno">azul-pequeno&lt;/li>
+      &lt;li>chocolate&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+
+    ---CSS
+    :root {
+    --margen: 100px;
+    }
+
+    
+    ul {
+      margin-left: var(--margen);
+    }
+  </pre>
+
+  <h2>Variables definidas en contexto definido</h2>
+  <pre class="pre-colores">
+    ---HTML
+    &lt;div class="tool-box">
+      &lt;ul>
+      &lt;li id="rojo-grande">rojo-grande&lt;/li>
+      &lt;li class="verde-mediano">verde-mediano&lt;/li>
+      &lt;li att="azul-pequeno">azul-pequeno&lt;/li>
+      &lt;li>chocolate&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+
+    -CSS
+    /*Varibles en contexto definido*/
+    .tool-box {
+      --rojo: rgb(255, 0, 0);
+      --verde: rgb(0, 255, 0);
+      --azul: rgb(0, 0, 255);
+      --chocolate: rgb(121, 60, 17);
+    
+      --grande: 40px;
+      --mediano: 20px;
+      --pequeno: 10px;
+    }
+    
+    /*Selectores*/
+    #rojo-grande{
+      color: var(--rojo, rgb(238, 130, 238));
+      font-size: var(--grande);
+    }
+    
+    .verde-mediano{
+      color: var(--verde, fuchsia);
+      font-size: var(--mediano);
+    }
+    
+    [att="azul-pequeno"]{
+      color: var(--azul, magenta);
+      font-size: var(--pequeno);
+    }
+    
+    li {
+      color: var(--chocolate, pink);
+    }
+
+    
+    .pre-colores {
+      --degradado: linear-gradient(135deg, #c04ef5, #8effffd7); /* Degradado beige */
+      --bordes: 2px solid #ffe9a6b9; /* Borde beige */
+      --relleno: 10px;
+      --valor-overflow: auto;
+      --azul: rgb(12, 44, 54);;
+    }
+    
+    pre {
+      background: var(--degradado);
+      border: var(--bordes);
+      padding: var(--relleno);
+      overflow: var(--valor-overflow);
+      color: var(--azul);
+    }
+  </pre>
+
+  <h2>Compatibilidad entre navegadores</h2>
+
+<p>Si un navegador, como p.e. Google Chrome, es capaz de interpretar variables CSS, entonces, suponiendo que establezcamos una varible para el color, podría ser utilizada así:</p>
+
+<pre class="pre-colores">
+  ---CSS
+  .paleta-color {
+    --rojo: rgb(255,0 ,0);
+  }
+
+  .texto-rojo {
+    color: var(--rojo, <i>color_de_respaldo</i>)
+  }
+</pre>
+<p>En el ejemplo anterior, si por algún motivo (escribir mal el nombre de la variable <strong>--roja</strong> ), se utilizaría el <strong>color_de_respaldo</strong>.</p>
+
+<p>Cuando un navegador no interpreta variables CSS, la solución será incluir la misma propiedad antes de la propiedad que usa la variable.</p>
+
+
+<pre class="pre-colores">
+  ---CSS
+  .paleta-color {
+    --rojo: rgb(255,0 ,0);
+    --verde: rgb(0, 255, 0)
+  }
+
+  /*CASO A - Sin color de respaldo*/
+  .texto-rojo {
+    color: rgb(255, 0, 0);
+    color: var(--roja)
+  }
+  
+  /*CASO B - Con color de respaldo*/
+  .texto-verder {
+    color: rgb(0, 255, 0);
+    color: var(--verde, green)
+  }  
+</pre>
+
+<p>Es necesario seguir utilizando el color_de_respaldo ya que si se omite y has escrito mal el nombre de la variable, no se mostrará color alguno (CASO A), ya que:</p>
+<ol>
+  <li>El navegador leerá e interpretará la propiedad:
+    <pre>color: rgb(255, 0, 0);</pre>
+  </li>
+
+  <li>Se interpretará la propiedad:
+    <pre>color: var(--roja)</pre>
+
+    <p>Pero ya que la función <strong>var()</strong> en la propiedad ha sido interpretada pero el nombre de la variable ha sido mal escrito y no existe un color de respaldo, y además CSS aplicará la última propiedad válida, no se mostrará adecuadamente en el navegador.</p>
+  </li>
+</ol>
+
+<h2>Prefijos CSS de navegador</h2>
+<a href="https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=761:prefijos-css-de-navegador-chrome-firefox-iexplorer-opera-safari-webkit-moz-ms-o-ejemplos-cu01056d&catid=75&Itemid=203">https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=761:prefijos-css-de-navegador-chrome-firefox-iexplorer-opera-safari-webkit-moz-ms-o-ejemplos-cu01056d&catid=75&Itemid=203</a>
 </body>
 </html>

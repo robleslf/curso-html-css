@@ -1,7 +1,13 @@
-.paleta-color {
-  --rojo: rgb(255, 0 , 0);
+/*Variables globales*/
+:root {
+  --margen: 100px;
+}
+
+/*Varibles en contexto definido*/
+.tool-box {
+  --rojo: rgb(255, 0, 0);
   --verde: rgb(0, 255, 0);
-  --azul: rgb(0, 0 ,255);
+  --azul: rgb(0, 0, 255);
   --chocolate: rgb(121, 60, 17);
 
   --grande: 40px;
@@ -9,19 +15,106 @@
   --pequeno: 10px;
 }
 
+/*Selectores*/
 #rojo-grande{
-
+  color: var(--rojo, rgb(238, 130, 238));
+  font-size: var(--grande);
 }
 
 .verde-mediano{
-
+  color: var(--verde, fuchsia);
+  font-size: var(--mediano);
 }
 
 [att="azul-pequeno"]{
-  color: var(--azul, blue);
-  font-size: var(--pequeno), 10px;
+  color: var(--azul, magenta);
+  font-size: var(--pequeno);
 }
 
 li {
-  color: var(--chocolate, chocolate);
+  color: var(--chocolate, fuchsia);
+}
+
+ul {
+  margin-left: var(--margen);
+}
+
+
+
+.pre-colores {
+  --degradado: linear-gradient(135deg, #4e51f5, #8effffd7); /* Degradado beige */
+  --bordes: 2px solid #ffe9a6b9; /* Borde beige */
+  --relleno: 10px;
+  --valor-overflow: auto;
+  --azul: rgb(12, 44, 54);;
+}
+
+pre {
+  background: var(--degradado);
+  border: var(--bordes);
+  padding: var(--relleno);
+  overflow: var(--valor-overflow);
+  color: var(--azul);
+  border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: "Orbitron";
+  src: url(../fonts/Orbitron/Orbitron-VariableFont_wght.ttf);
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif; /* Fuente Orbitron */
+  font-size: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10vh;
+  letter-spacing: 4px;
+  color: rgb(38, 106, 194);
+  text-shadow: 0 0 10px rgba(16, 255, 235, 0.8); /* Efecto de neón blanco amarillo */
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif; /* Fuente Orbitron */
+  font-size: 36px;
+  letter-spacing: 3px;
+  color: rgb(94, 223, 255); /* Color de brillo azul neon */
+  text-shadow: 0 0 10px rgba(138, 252, 252, 0.8); /* Efecto de neón azul */
+}
+
+
+body {
+  background-image: url('../img/shrine-mountain-digital-art-scenery-4k-wallpaper-uhdpaper.com-453@0@h.jpg'); /* Reemplaza 'ruta/de/la/imagen.jpg' con la ruta real de tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  margin: 50px;
+  padding: 0;
+  font-family: Orbitron, sans-serif;
+  color: #fff;
+  background-size: cover; /* Para que el fondo cubra toda la página */
+}
+
+
+::selection {
+  background-color: #0066ff; /* Cambia el color de fondo de la selección */
+  color: #6210be; /* Cambia el color del texto seleccionado */
+}
+
+p {
+  font-family: Orbitron, sans-serif;
+  color: rgb(255, 253, 160);
+  text-shadow:
+  -1px -1px 0 black, /* Sombra superior izquierda */
+  1px -1px 0 black, /* Sombra superior derecha */
+  -1px 1px 0 black, /* Sombra inferior izquierda */
+  1px 1px 0 black; /* Sombra inferior derecha */
 }
